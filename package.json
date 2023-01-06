@@ -19,6 +19,9 @@
     "tailwind-scrollbar-hide": "^1.1.7",
     "vercel": "^28.10.3"
   },
+  "resolutions": {
+    "postcss-focus-within": "^4.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",
