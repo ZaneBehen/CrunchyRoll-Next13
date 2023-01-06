@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Api(props) {
   const [newAnime, setNewAnime] = useState();
@@ -21,7 +22,7 @@ export default function Api(props) {
         }
       };
         return (
-            <div id="explore" className="relative z-50 bg-black w-full h-full">
+            <div id="explore" className="relative z-50 bg-black w-full h-full overflow-auto">
                   <div id="explore" className="mt-5 flex flex-row justify-between">
                     <h1 className="text-white text-xl pl-1">{props.title}</h1>
                     <a
@@ -41,6 +42,7 @@ export default function Api(props) {
                         className="flex flex-col"
                         key={item.images.jpg.image_url}
                       >
+                        <Link href={`/anime/${item.mal_id}`}>
                         <img
                           className="hover:scale-105 transition cursor-pointer mt-3 pl-2 mr-9"
                           height={1500}
@@ -49,6 +51,7 @@ export default function Api(props) {
                           src={item.images.jpg.image_url}
                           alt="img"
                         />
+                        </Link>
                         <h2
                           className="text-white text-sm mt-1 mr-5 ml-2"
                           key={mal_id}

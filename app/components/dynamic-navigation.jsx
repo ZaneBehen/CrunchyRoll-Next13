@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { UserAuth } from '../../context/AuthContext'
 
-export default function Navigation() {
+export default function DynamicNavigation() {
   const { user, logout } = UserAuth();
   const router = useRouter();
 
@@ -16,9 +16,11 @@ export default function Navigation() {
     }
   };
     return (
-    <div className='w-full flex items-center justify-between py-4 px-2 lg:px-40 absolute z-[100]'>
+    <div className='w-full flex bg-black items-center justify-between py-4 px-2 lg:px-40 z-[100]'>
         <figure>
+            <a href="/">
             <img className="scale-[1.1] ml-2 cursor-pointer hover:scale-[1.2]" src="https://static.crunchyroll.com/cr-spa-registration/assets/img/logo/cr_logo.png"/>
+            </a>
         </figure>
         <div className="flex items-center">
         {user?.email ? ( 
@@ -31,12 +33,12 @@ export default function Navigation() {
         </Link>
         )}
          {user?.email ? (
-        <a href="#explore" className="scroll-smooth">
-        <button className="border-2 scroll-smooth border-white py-2 mr-2 hover:scale-105 lg:mr-8 px-8 cursor-pointer text-sm text-white sm:items-center">EXPLORE</button>
+        <a href="/" className="scroll-smooth">
+        <button className="border-2 scroll-smooth border-[#FFA500] hover:scale-105 py-2 mr-2 lg:mr-8 px-8 cursor-pointer text-sm text-white sm:items-center">EXPLORE</button>
         </a>
          ) : (
           <Link href='/signup'>
-        <button className="border-2 scroll-smooth border-white py-2 mr-2 hover:scale-105 lg:mr-8 px-8 cursor-pointer text-sm text-white sm:items-center">EXPLORE</button>
+        <button className="border-2 scroll-smooth border-white hover:scale-105 py-2 mr-2 lg:mr-8 px-8 cursor-pointer text-sm text-white sm:items-center">EXPLORE</button>
         </Link>
         )}
       </div>

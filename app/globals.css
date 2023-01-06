@@ -25,4 +25,7 @@ body {
     left: 0;
     scroll-behavior: smooth;
 }
-
+.dynamic {
+  position: relative;
+  overflow-x: auto;
+}
