@@ -13,11 +13,11 @@ export default function Home() {
  <div className='bg-black overflow-hidden'>
   <div className='h-screen w-full scrollbar-hide flex'>
     <Navigation/>
-    <div className='flex items-center justify-center h-[122%] w-full flex-col'>
+    <div className='flex items-center justify-center h-[132%] sm:h-[122%] w-full flex-col'>
     <h1 className=" z-50 whitespace-nowrap text-4xl text-white md:text-5xl lg:text-6xl font-bold ">The World's Largest</h1>
     <h1 className="sm:mt-2 z-50 whitespace-nowrap text-white text-4xl md:text-5xl lg:text-6xl font-bold">Anime Collection</h1>
     <button className="px-0 z-50 mt-10 py-2 w-[70%] md:w-[30%] lg:w-[15%] bg-orange-600 sm:text-md text:xs cursor-not-allowed">VIEW PREMIUM PLANS</button>
-    <div className='flex flex-col sm:flex-row'>
+    <div className='flex flex-col sm:flex-row sm:mt-0 mt-8'>
     <Info image='M20 40a20 20 0 110-40 20 20 0 010 40zm0-2a18 18 0 100-36 18 18 0 000 36zm-5.75-12.66L19 20V9h2v11.38a1 1 0 01-.25.66l-5 5.62-1.5-1.32z'
           info1 = 'Watch new episodes one hour'
           info2 = 'after they air in Japan'

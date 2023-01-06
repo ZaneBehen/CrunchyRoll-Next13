@@ -25,7 +25,7 @@ export default function Reccomendations(props) {
                       >
                         <Link href={`/anime/${item.entry.mal_id}`}>
                         <img
-                          className="cursor-pointer mt-3 pl-2 mr-9 lg:max-h-[320px] lg:w-[250px]"
+                          className="cursor-pointer mt-3 pl-2 mr-9 lg:max-h-[320px] lg:w-[250px] ml-4 sm:ml-0"
                           height={1500}
                           width={150}
                           key={id}

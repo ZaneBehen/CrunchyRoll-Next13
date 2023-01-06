@@ -33,17 +33,16 @@ export default function Page({params}) {
     return (<div className="h-full w-full bg-black flex flex-col box-border overflow-y-visible">
         <DynamicNavigation/>
         <div className="sm:mt-2 mt-5 w-full h-full sm:h-[50%] flex items-center justify-center flex-col">
-        <div className="flex flex-row items-center justify-start w-[50%] mb-1 sm:mb-2">
+        <div className="flex flex-row items-center justify-start w-[75%] sm:w-[50%] mb-1 sm:mb-2">
         <a href="/" className="hover:scale-110">
         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" className="text-white w-5 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg>
         </a>
         <h1 className="text-white text-3xl">Anime</h1>
         </div>
-        <img className="sm:hidden block max-w-xs scale-75" src={newImage}></img>
-        <div className="flex w-[50%] justify-center items-center">
-        <iframe className='hidden sm:block w-[75%] h-96' src={newAnime} title="YouTube video player" frameBorder="0"></iframe>
-        <div className="ml-2">
-        <h1 className="text-white text-3xl font-bold ml-3 mb-4 sm:mb-2">{newTitle}</h1>
+        <div className="flex w-full sm:w-[50%] justify-center items-center flex-col sm:flex-row">
+        <iframe className='w-[75%] h-96' src={newAnime} title="YouTube video player" frameBorder="0"></iframe>
+        <div className="sm:ml-2">
+        <h1 className="text-white text-3xl font-bold sm:ml-3 mb-4 sm:mb-2 text-center">{newTitle}</h1>
         <p className="text-white ml-3 hidden sm:block max-w-xs">{truncateString(newDescription)}</p>
         </div>
         </div>
