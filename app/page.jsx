@@ -40,7 +40,7 @@ export default function Home() {
     </div>
     </div>
     <img
-            className="h-full w-full scale-x-[2.5] md:scale-x-150 bg-contain max-w-none z-1 absolute"
+            className="h-full w-full md:w-screen scale-x-[2.5] md:scale-x-100 bg-contain max-w-none z-1 absolute"
             alt="img"
             src="https://static.crunchyroll.com/cr-spa-registration/assets/img/landing/hero_bg.png"
           />
