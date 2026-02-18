@@ -42,7 +42,7 @@ export default function Home() {
     <img
             className="h-full w-full md:w-screen scale-x-[2.5] md:scale-x-100 bg-contain max-w-none z-1 absolute"
             alt="img"
-            src="https://static.crunchyroll.com/cr-spa-registration/assets/img/landing/hero_bg.png"
+            src="https://image2url.com/r2/default/images/1771382725753-3bdf51b1-1293-4702-a755-320688e1e1c4.jpg"
           />
     </div>
     {user?.email ? (
